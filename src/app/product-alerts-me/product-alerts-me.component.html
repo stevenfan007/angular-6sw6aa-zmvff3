@@ -1,0 +1,9 @@
+<!-- <p>product-alerts-me works!</p> -->
+<!-- *ngIf="product_alertme && product_alertme.price > 700" -->
+<p *ngIf="product_alertme && product_alertme.price > 700 ; else elseShowPrice" >
+<button type="button" (click)="notify.emit()">Notify Me</button>
+</p>
+
+<ng-template #elseShowPrice>
+<p>fuck! the price is less than 700, it is {{ product_alertme.price}}</p>
+</ng-template>

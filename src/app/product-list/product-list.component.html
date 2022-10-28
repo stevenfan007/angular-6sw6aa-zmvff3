@@ -1,0 +1,24 @@
+<h2>Products3</h2>
+<div *ngFor="let product_every of products_component">
+  <h3>
+    <a [title]="product_every.name + ' details'" 
+    [routerLink]="['/products', product_every.id]">
+      {{ product_every.name }}>
+      {{ product_every.name }}
+    </a>
+  </h3>
+  <p *ngIf="product_every.description">
+    Description: {{ product_every.description }}
+  </p>
+  <button type="button" (click)="share()">Shar2e</button>
+  
+  <app-product-alerts-me [product_alertme]="product_every" (notify)="onNotify()">
+</app-product-alerts-me>
+
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
