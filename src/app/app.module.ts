@@ -12,6 +12,7 @@ import { MyCartComponent } from './my-cart/my-cart.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: 'cart', component: MyCartComponent },
       { path: 'shipping', component: ShippingComponent },
     ]),
+    NgbModule.forRoot(),
   ],
   declarations: [
     AppComponent,

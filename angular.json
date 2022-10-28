@@ -29,7 +29,10 @@
             "styles": [
               "src/styles.css",
               "src/app/my-cart/my-cart.component.css",
-              "src/app/shipping/shipping.component.css"
+              "src/app/shipping/shipping.component.css",
+              {
+                "input": "./node_modules/bootstrap/dist/css/bootstrap.css"
+              }
             ],
             "scripts": []
           },
